@@ -50,7 +50,7 @@ object TestCoinBias extends App  {
   //val fileName = "/Users/rasrivastava/CODE_OPEN/MACHINE_LEARNING_SCALA/src/test/resources/experiment.txt"
 
   val biasValue = 0.75
-  generateRandomWithBias(biasValue,1000)
+  //generateRandomWithBias(biasValue,1000)
   val lines = Source.fromFile(fileName).getLines()
   var priorValue = new PriorValue(0,0)
   for (line <- lines) {
@@ -67,7 +67,7 @@ object TestCoinBias extends App  {
   val beta  = 1
   val alphaBeta = priorValue.getUpdatedAlphaBeta(alpha,beta)
 
-  println("Bias for 1 is " + alphaBeta._1/(alphaBeta._1 + alphaBeta._2))
+  println("Calculated Bias via Bayesian for 1 is " + alphaBeta._1/(alphaBeta._1 + alphaBeta._2) + " " + " data has hidden bias of " + biasValue)
 
 
 }

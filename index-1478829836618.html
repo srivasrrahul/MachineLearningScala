@@ -1,0 +1,28 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>
+      Highchart
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="http://code.highcharts.com/4.0.4/highcharts.js"></script>
+<script type="text/javascript" src="http://code.highcharts.com/4.0.4/modules/exporting.js"></script>
+    
+<script type="text/javascript">$.ajax({url: '/check', dataType: 'jsonp', complete: function(){location.reload()}})</script>
+    </head><body>
+    <div id="container-1084089662" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+    
+
+    <script type="text/javascript">
+        $(function() {
+            $('#container-1084089662').highcharts(
+    
+                {"series":[{"data":[{"x":3497900,"y":0.623},{"x":2485475,"y":0.593},{"x":1782875,"y":0.512},{"x":1725450,"y":0.5},{"x":1645574,"y":0.463},{"x":1469800,"y":0.395}],"type":"line"}],"exporting":{"filename":"chart"},"yAxis":[{"title":{"text":""}}],"plotOptions":{"line":{"turboThreshold":0}},"credits":{"href":"","text":""},"chart":{"zoomType":"xy"},"title":{"text":""},"xAxis":[{"title":{"text":""}}]}
+            );
+        });
+    </script>
+
+    </body></html>

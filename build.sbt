@@ -14,7 +14,9 @@ libraryDependencies ++=Seq(
   "org.scalanlp" %% "breeze-natives" % "0.12",
   "org.scalanlp" %% "breeze-viz" % "0.12",
   "com.quantifind" %% "wisp" % "0.0.4",
-  "org.scala-saddle" %% "saddle-core" % "1.3.+"
+  "org.scala-saddle" %% "saddle-core" % "1.3.+",
+  "org.apache.spark" %% "spark-core" % "2.1.0",
+  "org.apache.spark" %% "spark-mllib" % "2.1.0"
 
 
 )
